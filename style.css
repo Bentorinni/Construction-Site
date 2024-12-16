@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #81808081;
+}
+
+/*Nawigacja*/
+
+#bar {
+    background-color: orange;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#divnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+}
+
+#divnav p {
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    padding-right: 700px;
+}
+
+#logo img {
+    height: 145px;
+    width: 145px;
+}
+
+#divnav li {
+    list-style: none;
+    display: inline-block;
+    padding: 50px;
+    
+}
+
+#divnav li a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border: solid white 1px;
+    border-radius: 5px;
+    padding: 15px;
+    
+    
+}
+
+#divnav li a:hover {
+    background-color: #df7c0c;
+    
+}
+
+/*Main*/
+
+.przestawki {
+    background: #333;
+    padding: 10px 0;
+    font-size: 14px;
+    border-top: 4px solid #ffaa00;
+    clear: both;
+}
+
+.hl {
+    width: 96%;
+    border: 1px solid grey;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#pasek1, #pasek2, #pasek3 {
+    display: flex;
+}
+
+#infolayout {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #d4d2d2;
+    
+}
+
+#infolayout h1, #infolayout h3 {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    /* border: solid #df7c0c 1px;
+    border-radius: 15px; */
+    font-size: 50px;
+    color: #df7c0c;
+    margin: 2% 0 2% 0;
+}
+
+#infolayout p {
+    font-size: 20px;
+    padding: 1%;
+}
+
+#info1 , #info2, #info3 {
+    width: 75%;
+    background-color: #d4d2d2;
+}
+
+#lokalka {
+    width: 25%;
+    margin: 2% 0 2% 0;
+    padding-right: 1%;
+}
+
+.infolayoutIMG {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+#zaufanie {
+    width: 25%;
+    margin: 2% 0 2% 2%;
+    padding-right: 1%;
+}
+
+#projekt {
+    width: 25%;
+    margin: 2% 0 2% 2%;
+    padding-right: 1%;
+}
+
+
+
+#robol img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#oknalayout {
+    width: 100%;
+    margin-top: 35px;
+}
+
+#row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#okno1, #okno2, #okno3 {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    padding: 15px;
+    float: inline-start;
+    border: solid #df7c0c 1px;
+    background-color: #d4d2d2;
+}
+
+.napis {
+    text-align: center;
+    color: #df7c0c;
+}
+
+
+#row img {
+    height: 75%;
+    width: 75%;
+    border-radius: 15px;
+    margin-top: 70px;
+    margin-bottom: 15px;
+    /* display: inline-block; */
+    position: relative;
+    justify-items: center;
+    
+}
+
+/* Stopka */
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    border-top: 4px solid #ffaa00;
+    clear: both;
+    margin-top: 35px;
+}
+
+/*Produkty*/
+
+#alert {
+    padding: 20px;
+    margin-top: 1%;
+    background-color: #f44336; 
+    color: white;
+    margin-bottom: 15px;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover{
+    color: black;
+}
+
+.produkty {
+    height: 50%;
+    width: auto;
+    display: flex;
+    margin: 15px;
+    padding: 15px;
+}
+
+.produkt {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-height: auto;
+    margin: 1%;
+    text-align: center;
+    border: solid #df7c0c 1px;
+    border-radius: 15px;
+    padding: 1.5%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .produkt h1 {
+    max-width: 100%;
+  }
+
+  .cena {
+    color: #ffaa00;
+    font-size: 22px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .produkt button {
+    border: solid white 1px;
+    padding: 12px;
+    color: white;
+    background-color: #ffaa00;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 5%;
+    margin-bottom: 1%;
+  }
+
+  .przyciski {
+    margin-top: auto;
+  }
+  
+  .produkt button:hover {
+    background-color: #df7c0c;
+    color: white;
+  }
+
+  #produkty2 {
+    height: 50%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    padding: 15px;
+}
+
+/* Uslugi */
+
+#infouslugi {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0 2% 0;
+}
+
+#infouslugi h1 {
+    color: #df7c0c;
+    font-size: 35px;
+    margin-bottom: 1%;
+}
+
+#infouslugi p {
+    font-size: 18px;
+}
+
+#infouslugi h3 {
+    display: flex;
+    margin: 2% 0  0;
+}
+
+#uslugi-pre {
+    display: flex;
+    justify-content: center;
+}
+
+#uslugi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uslugi-okno {
+    display: flex;
+    margin: 1%;
+    padding: 10px;
+    float: inline-start;
+    border: solid #df7c0c 1px;
+    background-color: #d4d2d2;
+    width: 15%;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.uslugi-okno:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.uslugi-okno:hover {
+    transform: scale(1.05);
+    border-color: #ffaa00;
+}
+
+.uslugi-okno img {
+    height: 50px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.uslugi-okno p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.tabelaceny {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin: 2% 0 2% 0;
+    border-radius: 8px;
+}
+
+.ceny {
+    list-style-type: none;
+    border: solid #333 1px;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.ceny:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.ceny .header {
+    color: white;
+    background-color: #333;
+    font-size: 25px;
+}
+
+.ceny li {
+    border-bottom: 1px solid #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.ceny .grey {
+    background-color: #d4d2d2;
+    font-size: 20px;
+}
+
+.button {
+    background-color: #df7c0c;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+.button:hover{
+    transform: translateY(-3px);
+    background-color: #ffaa00;
+}
+
+
+  /* Sekcja Hero - Do nauki */ 
+#hero {
+    position: relative;
+    height: 100vh;
+    background: url('images/robol.png') no-repeat center center/cover  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(223, 124, 12, 0.6); 
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.cta-buttons .btn {
+    display: inline-block;
+    background-color: #ffaa00;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #df7c0c;
+}
+
