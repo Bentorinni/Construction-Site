@@ -18,9 +18,11 @@ body {
 
 #divnav {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    height: 75px;
+    height: auto;
+    padding: 10px;
 }
 
 #divnav p {
@@ -28,19 +30,19 @@ body {
     font-weight: bold;
     color: white;
     font-size: 18px;
-    padding-right: 700px;
+    padding-right: 0;
+    text-align: center;
 }
 
 #logo img {
-    height: 145px;
-    width: 145px;
+    height: auto;
+    width: 100px;
 }
 
 #divnav li {
     list-style: none;
     display: inline-block;
-    padding: 50px;
-    
+    padding: 10px;
 }
 
 #divnav li a {
@@ -49,9 +51,7 @@ body {
     text-decoration: none;
     border: solid white 1px;
     border-radius: 5px;
-    padding: 15px;
-    
-    
+    padding: 10px;
 }
 
 #divnav li a:hover {
@@ -82,33 +82,28 @@ body {
 
 #infolayout {
     width: 100%;
-    height: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     background-color: #d4d2d2;
-    
+    padding: 10px;
 }
 
 #infolayout h1, #infolayout h3 {
-    display: flex;
-    width: auto;
-    justify-content: center;
-    align-items: center;
-    /* border: solid #df7c0c 1px;
-    border-radius: 15px; */
-    font-size: 50px;
+    font-size: 24px;
     color: #df7c0c;
-    margin: 2% 0 2% 0;
+    text-align: center;
+    margin: 10px 0;
 }
 
 #infolayout p {
-    font-size: 20px;
-    padding: 1%;
+    font-size: 16px;
+    padding: 5px;
 }
 
-#info1 , #info2, #info3 {
-    width: 75%;
-    background-color: #d4d2d2;
+.info, #lokalka, #zaufanie, #projekt {
+    width: 100%;
+    margin: 10px 0;
 }
 
 #lokalka {
@@ -118,9 +113,8 @@ body {
 }
 
 .infolayoutIMG {
-    height: 100%;
-    width: 100%;
-    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
 }
 
 #zaufanie {
@@ -151,6 +145,7 @@ body {
 
 #row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -264,18 +259,18 @@ footer {
     font-size: 18px;
     margin-top: 5%;
     margin-bottom: 1%;
-  }
+}
 
-  .przyciski {
+.przyciski {
     margin-top: auto;
-  }
-  
-  .produkt button:hover {
+}
+
+.produkt button:hover {
     background-color: #df7c0c;
     color: white;
-  }
+}
 
-  #produkty2 {
+#produkty2 {
     height: 50%;
     width: auto;
     display: flex;
@@ -401,7 +396,7 @@ footer {
     text-align: center;
     text-decoration: none;
     font-size: 18px;
-  }
+}
 
 .button:hover{
     transform: translateY(-3px);
@@ -466,3 +461,136 @@ footer {
     background-color: #df7c0c;
 }
 
+/* Media Queries dla responsywności */
+@media (max-width: 768px) {
+    /* Nawigacja */
+    #divnav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #divnav p {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    #divnav li {
+        padding: 10px;
+    }
+
+    #divnav li a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #logo img {
+        height: 100px;
+        width: 100px;
+    }
+
+    /* Main */
+    #pasek1, #pasek2, #pasek3 {
+        flex-direction: column;
+    }
+
+    #infolayout h1, #infolayout h3 {
+        font-size: 30px;
+    }
+
+    #infolayout p {
+        font-size: 16px;
+    }
+
+    .info, #lokalka, #zaufanie, #projekt {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .infolayoutIMG {
+        max-width: 100%;
+    }
+
+    #row img {
+        height: auto;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #okno1, #okno2, #okno3 {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    /* Produkty */
+    .produkty {
+        flex-direction: column;
+    }
+
+    .produkt {
+        width: 100%;
+    }
+
+    .produkt button {
+        font-size: 16px;
+    }
+
+    #produkty2 {
+        flex-direction: column;
+    }
+
+    /* Usługi */
+    #infouslugi {
+        flex-direction: column;
+    }
+
+    .uslugi-okno {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Cennik */
+    .tabelaceny {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Hero */
+    #hero {
+        height: auto;
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta-buttons .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    #divnav li a {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    #infolayout h1, #infolayout h3 {
+        font-size: 24px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+}
