@@ -19,7 +19,9 @@ A modern, responsive, and fully customizable website template tailored for const
 Check out the live demo here:  
 👉 [Live Demo](https://bentorinni.github.io/Construction-Site/)  
 
-![Construction Site Website](https://github.com/Bentorinni/Construction-Site/blob/main/assets/preview.png)
+![Construction Site Website](https://github.com/Bentorinni/Construction-Site/blob/main/assets/preview1.jpg)
+![Construction Site Website](https://github.com/Bentorinni/Construction-Site/blob/main/assets/preview2.jpg)
+![Construction Site Website](https://github.com/Bentorinni/Construction-Site/blob/main/assets/preview3.jpg)
 
 ---
 
