@@ -16,7 +16,7 @@ A modern, responsive, and fully customizable website template tailored for const
 
 ## 🌐 Preview  
 
-# ‼️ Website is in Polish language ‼️
+ ‼️ Website is in Polish language ‼️
 
 Check out the live demo here:  
 👉 [Live Demo](https://bentorinni.github.io/Construction-Site/)  
