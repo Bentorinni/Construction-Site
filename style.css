@@ -2,11 +2,15 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #81808081;
+    max-width: 100%;
+    overflow-x: hidden;
 }
+
 
 /*Nawigacja*/
 
@@ -90,14 +94,14 @@ body {
 }
 
 #infolayout h1, #infolayout h3 {
-    font-size: 24px;
+    font-size: 28px;
     color: #df7c0c;
     text-align: center;
     margin: 10px 0;
 }
 
 #infolayout p {
-    font-size: 16px;
+    font-size: 18px;
     padding: 5px;
 }
 
@@ -115,6 +119,7 @@ body {
 .infolayoutIMG {
     max-width: 100%;
     height: auto;
+    border-radius: 15px;
 }
 
 #zaufanie {
@@ -188,6 +193,7 @@ footer {
     border-top: 4px solid #ffaa00;
     clear: both;
     margin-top: 35px;
+    width: auto;
 }
 
 /*Produkty*/
